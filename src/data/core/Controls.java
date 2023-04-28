@@ -159,7 +159,7 @@ public class Controls {
         }
         Point3D deltaPos = speed.multiply(elapsedSeconds);
 
-        /*
+
         if (!Utils.compare(deltaPos.getY(), 0)) {
             double avSpace = 0.5;
             int sign = deltaPos.getY() > 0 ? 1 : -1;
@@ -212,11 +212,9 @@ public class Controls {
             }
         }
 
-         */
-
 
         position = position.add(deltaPos);
-
+        /*
         for (int x = (int) (position.getX() - x2); x <= (int) (position.getX() + x2); x++) {
             for (int y = (int) (position.getY() - y2); y <= (int) (position.getY() + y2); y++) {
                 for (int z = (int) (position.getZ() - z2); z <= (int) (position.getZ() + z2); z++) {
@@ -278,6 +276,8 @@ public class Controls {
                 }
             }
         }
+
+         */
 
     }
 
